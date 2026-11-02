@@ -1,0 +1,5 @@
+# dsh-llm-usage-stats —— 按大模型（provider/model）统计 token 用量
+# 随本组合包安装即启用；卸载组合包即停止统计。
+- insert:
+    - id: llm-usage-stats
+      name: 'dsh-llm-usage-stats'

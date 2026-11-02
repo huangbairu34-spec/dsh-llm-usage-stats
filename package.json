@@ -1,0 +1,30 @@
+{
+	"name": "dsh-llm-usage-stats",
+	"description": "统计不同大模型的 token 用量：按 provider/model 跨会话累计（缓存读写、推理 token 分列），/usage 查看报表。",
+	"version": "0.1.0",
+	"type": "module",
+	"main": "lib/index.js",
+	"exports": {
+		".": "./lib/index.js",
+		"./cordis.patch.yml": "./cordis.patch.yml",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"lib",
+		"cordis.patch.yml",
+		"README.md"
+	],
+	"license": "MIT",
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		}
+	},
+	"keywords": [
+		"dsh",
+		"deepseek-harness",
+		"plugin",
+		"usage",
+		"tokens"
+	]
+}
